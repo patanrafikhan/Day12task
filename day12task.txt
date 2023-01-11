@@ -1,0 +1,54 @@
+*.write a program print reverse number
+
+#!/bin/bash -x
+
+echo "Enter a number :"
+read n
+sd=0
+rev=0
+
+while [ $n -gt 0 ]
+do
+    sd=$(( $n % 10 ))
+    rev=`expr $rev \* 10 + $sd` 
+    n=$(( $n / 10 ))
+done
+
+echo "Reverse number of entered digit is $rev"
+
+
+output: Enter a number :456
+Reverse number of entered digit is 654
+
+*.Asked Question is
+
+if statement : its a decesion based a true or false execution
+else statement : its decesion based a false execution 
+case statement :Path based multiple conditions
+array : array is a collection of data elements.its store one data type in symantic arrengement.
+function :its a relation between set of inputs having one output path.
+
+cd .. : its come back one directory
+cd /  : its go forward directory
+
+*.what is git file creating and Reposetory process
+
+mkdir demo
+cd demo
+git init
+touch filename.sh
+nano filename.sh
+storing data in given filename
+ctrl+s
+ctrl+x
+git checkout
+git add filename.sh
+git commit -m "Added : A text file"
+go to git hub account
+creating a new repositary
+repository name is give demo and save
+copy that demo repository remote link command
+and paste in git bash press enter
+git push -u origin master
+
+ 
